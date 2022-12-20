@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>Animaciones</title>
+  <title>JQuery Home</title>
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
 
   <link rel="stylesheet" href="../assets/css/maicons.css">
@@ -27,7 +27,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
       <div class="container">
-        <a href="../index.html" class="navbar-brand">JS HTML <span class="text-primary"> DOM AVANZADO</span></a>
+        <a href="../index.html" class="navbar-brand">JQuery <span class="text-primary"> Tutorial</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -36,25 +36,22 @@
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#animaciones">Animaciones DOM</a>
+              <a class="nav-link" href="#animaciones">JQuery Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#eventos">Eventos DOM</a>
+              <a class="nav-link" href="#eventos">JQuery Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#listener">EventListener DOM</a>
+              <a class="nav-link" href="#listener">JQuery Get Started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#nodos">Node DOM</a>
+              <a class="nav-link" href="#nodos">JQuery Syntax</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#colecciones">Colecciones DOM</a>
+              <a class="nav-link" href="#colecciones">JQuery Selectors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#lista">Lista de Nodos DOM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navegacion">Navegación DOM</a>
+              <a class="nav-link" href="#lista">JQuery Events</a>
             </li>
           </ul>
         </div>
@@ -69,8 +66,7 @@
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="../html/animaciones.html">Animaciones DOM</a></li>
-          <li class="breadcrumb-item active">Acerca de Animaciones JS DOM</li>
+          <li class="breadcrumb-item active">JQuery Home</li>
         </ul>
       </nav>
       
@@ -79,7 +75,7 @@
           <div class="blog-single-wrap">
             <div class="header">
               <div class="post-thumb">
-                <img src="../assets/img/blog/blog-1.jpg" alt="">
+                <img src="../assets/img/blog/blog-06.jpg" alt="">
               </div>
               <div class="meta-header">
                 <div class="post-author">
@@ -92,80 +88,41 @@
                 </div>
               </div>
             </div>
-            <h1 class="post-title">Acerca de Animaciones JS DOM</h1>
+            <h1 class="post-title">JQuery Home</h1>
             <div class="post-meta">
             </div>
             <div class="post-content">
-              <p>Puede usar JavaScript para crear una animación compleja que tenga, entre otros, los siguientes elementos:</p>
-                <ul>
-                  <li>Fuegos artificiales</li>
-                  <li>Efecto de desvanecimiento</li>
-                  <li>Roll-in o Roll-out</li>
-                  <li>Entrada de página o Salida de página</li>
-                  <li>Movimientos de Objetos</li>
-                </ul>
-              <p>JavaScript se puede utilizar para mover una serie de elementos DOM o cualquier otro elemento HTML, por la página de acuerdo con algún tipo de patrón determinado por una función o ecuación lógica.</p>
-              <p>JavaScript incluye las tres funciones mencionadas a continuación, que se usan comúnmente en los programas de animación.</p>
-              <dl>
-                <ul>
-                <li><dt>setTimeout (función, duración):</dt></li>
-                <dd>Esta función llama a la función después de la duración en milisegundos a partir de ahora.</dd>
-                <li><dt>setInterval (función, duración):</dt></li>
-                <dd>Esta función llama a la función después de cada milisegundos de duración .</dd>
-                <li><dt>clearTimeout(setTimeout_variable):</dt></li>
-                <dd>esta función llama a borrar cualquier temporizador establecido por las funciones setTimeout().</dd>
-              </li>
-              </dl>
-              <p>JavaScript también puede establecer una serie de atributos de un objeto DOM, incluida su posición en la pantalla. Puede configurar el atributo superior e izquierdo de un objeto para colocarlo en cualquier lugar de la pantalla. Aquí está su sintaxis.</p>
-              <blockquote class="quote">// Establecer la distancia desde el lado izquierdo de la pantalla. <br>
-                          object.style.left = distancia en pixeles o puntos.<br>
-                          //Establecer la distancia desde el lado superior de la pantalla.<br>
-                          object.style.top = distancia en pixeles o puntos.</blockquote>
-              <p>Las animaciones de JavaScript se realizan mediante la programación de cambios graduales en el estilo de un elemento.Los cambios son llamados por un temporizador. Cuando el intervalo del temporizador es pequeño, la animación parece continua.</p>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a></p>
+              <p>Para facilitar estos procesos tenemos jQuery, que bien podría resumirse en una navaja suiza para simplificar el modo en que accedemos al DOM de la web usando JavaScript.  jQuery es una librería desarrollada en 2006 por John Resig que permite añadir una capa de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando eventos, creando animaciones y diferentes efectos para enriquecer la experiencia de usuario.</p>
+                
+              
+              <p>Ejemplos en cada capítulo</p>
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a>
+                
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
-                    train.onclick = function() {<br>
-                      let start = Date.now();<br>
-
-                      let timer = setInterval(function() {<br>
-                        let timePassed = Date.now() - start;<br>
-
-                        train.style.left = timePassed / 5 + 'px';<br>
-
-                        if (timePassed > 2000) clearInterval(timer);<br>
-
-                      }, 20);<br>
-                    }<br>
+                    $(document).ready(function(){<br>
+                    $("h5").click(function(){<br>
+                       $(this).hide();<br>
+                      });<br>
+                    });<br>
                   </div>
                 </div>
-                <br>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a></p>
+                <br><br><br><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a>
                 <div class="collapse" id="collapseExample2">
-                  <div class="card card-body">
-                    <style>
-                    #train {
-                        position: relative;
-                        cursor: pointer;
-                      }
-                    </style>
                 
-                    <img id="train" src="https://js.cx/clipart/train.gif" width="200" height="200">
-
+                  <div class="card card-body">
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
                     <script>
-                    train.onclick = function() {
-                      let start = Date.now();
-
-                      let timer = setInterval(function() {
-                        let timePassed = Date.now() - start;
-
-                        train.style.left = timePassed / 5 + 'px';
-
-                        if (timePassed > 2000) clearInterval(timer);
-
-                      }, 20);
-                    }
+                    $(document).ready(function(){
+                      $("h5").click(function(){
+                        $(this).hide();
+                      });
+                    });
                     </script>
+
+                    <h5>If you click on me, I will disappear.</h5>
+                    <h5>Click me away!</h5>
+                    <h5>Click me too!</h5>
                   </div>
                 </div>
             </div>
@@ -182,11 +139,11 @@
               <div class="divider"></div>
 
               <ul class="categories">
-                <li><a href="#">Eventos DOM</a></li>
-                <li><a href="#">Navegacion DOM</a></li>
-                <li><a href="#">Nodos DOM</a></li>
-                <li><a href="#">Colecciones DOM</a></li>
-                <li><a href="#">Lista de Nodos DOM</a></li>
+                <li><a href="./eventos.html">JQuery Intro</a></li>
+                <li><a href="./eventlistener.html">JQuery Get Started</a></li>
+                <li><a href="#">JQuery Syntax</a></li>
+                <li><a href="#">JQuery Selectors</a></li>
+                <li><a href="#"></a>JQuery Events</li>
               </ul>
             </div>
 
@@ -196,11 +153,11 @@
               <div class="divider"></div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-1.jpg" alt="">
+                  <a class="post-thumb" href="./eventos.html">
+                    <img src="../assets/img/blog/blog-01.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Nodos DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventos.html">JQuery Intro</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -210,11 +167,11 @@
               </div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-2.jpg" alt="">
+                  <a class="post-thumb" href="./eventlistener.html">
+                    <img src="../assets/img/blog/blog-04.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Colecciones DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventlistener.html">JQuery Get Started</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -225,10 +182,10 @@
 
               <div class="blog-item">
                   <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-3.jpg" alt="">
+                    <img src="../assets/img/blog/blog-02.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Navegación DOM</a></h6>
+                    <h6 class="post-title"><a href="#">JQuery Syntax</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -245,13 +202,11 @@
               <div class="divider"></div>
 
               <div class="tag-clouds">
-                <a href="#" class="tag-cloud-link">Nodos</a>
-                <a href="#" class="tag-cloud-link">Colecciones</a>
-                <a href="#" class="tag-cloud-link">Animaciones</a>
-                <a href="#" class="tag-cloud-link">Lista de Nodos</a>
-                <a href="#" class="tag-cloud-link">JS</a>
-                <a href="#" class="tag-cloud-link">HTML</a>
-                <a href="#" class="tag-cloud-link">CSS</a>
+                <a href="#" class="tag-cloud-link">Intro</a>
+                <a href="#" class="tag-cloud-link">Get Started</a>
+                <a href="#" class="tag-cloud-link">Syntax</a>
+                <a href="#" class="tag-cloud-link">Events</a>
+                <a href="#" class="tag-cloud-link">Selectors</a>
               </div>
             </div>
 

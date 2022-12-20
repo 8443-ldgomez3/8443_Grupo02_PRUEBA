@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>Eventos</title>
+  <title>JQuery Intro</title>
 
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
 
@@ -28,7 +28,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
       <div class="container">
-        <a href="../index.html" class="navbar-brand">JS HTML <span class="text-primary"> DOM AVANZADO</span></a>
+        <a href="../index.html" class="navbar-brand">JQuery <span class="text-primary"> Tutorial</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,25 +37,22 @@
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#animaciones">Animaciones DOM</a>
+              <a class="nav-link" href="#animaciones">JQuery Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#eventos">Eventos DOM</a>
+              <a class="nav-link" href="#eventos">JQuery Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#listener">EventListener DOM</a>
+              <a class="nav-link" href="#listener">JQuery Get Started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#nodos">Node DOM</a>
+              <a class="nav-link" href="#nodos">JQuery Syntax</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#colecciones">Colecciones DOM</a>
+              <a class="nav-link" href="#colecciones">JQuery Selectors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#lista">Lista de Nodos DOM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navegacion">Navegación DOM</a>
+              <a class="nav-link" href="#lista">JQuery Events</a>
             </li>
           </ul>
         </div>
@@ -70,8 +67,7 @@
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="../html/eventos.html">Eventos JS DOM</a></li>
-          <li class="breadcrumb-item active">Acerca de Eventos JS DOM</li>
+          <li class="breadcrumb-item active">JQuery Intro</li>
         </ul>
       </nav>
       
@@ -80,7 +76,7 @@
           <div class="blog-single-wrap">
             <div class="header">
               <div class="post-thumb">
-                <img src="../assets/img/blog/blog-2.jpg" alt="">
+                <img src="../assets/img/blog/blog-01.jpg" alt="">
               </div>
               <div class="meta-header">
                 <div class="post-author">
@@ -93,87 +89,47 @@
                 </div>
               </div>
             </div>
-            <h1 class="post-title">Acerca de Eventos JS DOM</h1>
+            <h1 class="post-title">Introducción a jQuery</h1>
             <div class="post-meta">
             </div>
             <div class="post-content">
-              <p>Un JavaScript se puede ejecutar cuando ocurre un evento, como cuando un usuario hace clic en un elemento HTML.</p>
-              <p>Para ejecutar código cuando un usuario hace clic en un elemento, agregue código JavaScript a un atributo de evento HTML:</p>
-              <blockquote class="quote">">>onclick=JavaScript<<"</blockquote>
-              <h8 class="post-title">Ejemplo de Eventos HTML</h8>  
-                <ul>
-                  <li>Cuando un usuario hace clic con el mouse</li>
-                  <li>Cuando una página web ha cargado</li>
-                  <li>Cuando se ha cargado una imagen</li>
-                  <li>Entrada de página o Salida de páginCuando el mouse se mueve sobre un elemento</li>
-                  <li>Cuando se cambia un campo de entrada</li>
-                  <li>Cuando se envía un formulario HTML</li>
-                  <li>Cuando un usuario pulsa una tecla</li>
+              <h8 class="post-title">Lo que ya deberías saber</h8>    
+              <p>Antes de comenzar a estudiar jQuery, debe tener un conocimiento básico de:</p>
+              <ul>
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
                 </ul>
-              <h8 class="post-title">Los eventos Onload & Onunload</h8> 
-              <p>Los eventos onloady onunloadse activan cuando el usuario entra o sale de la página.</p>
-              <p>El onloadevento se puede utilizar para comprobar el tipo de navegador y la versión del navegador del visitante, y cargar la versión adecuada de la página web en función de la información.</p>
-              <p>Los eventos onloady onunloadse pueden utilizar para tratar con las cookies.</p>
-              <h8 class="post-title">Evento Onchange</h8> 
-              <p>El onchangeevento se usa a menudo en combinación con la validación de campos de entrada.</p>
-              <h8 class="post-title">Eventos Onmouseover & Onmouseout </h8> 
-              <p>Los eventos onmouseovery onmouseoutse pueden usar para activar una función cuando el usuario pasa el mouse sobre o fuera de un elemento HTML:</p>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a></p>
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                      function mOver(obj) {<br>
-                        obj.innerHTML = "Thank You"<br>
-                      }<br>
+              <h8 class="post-title">¿Qué es jQuery?</h8>  
+              <p>jQuery es una biblioteca de JavaScript liviana, "escribe menos, haz más".
 
-                      function mOut(obj) {<br>
-                        obj.innerHTML = "Mouse Over Me"<br>
-                      }<br>
-                    }<br>
-                  </div>
-                </div>
-                <br>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a></p>
-                <div class="collapse" id="collapseExample2">
-                  <div class="card card-body">
-                    <div onmouseover="mOver(this)" onmouseout="mOut(this)" 
-                        style="background-color:lightseagreen;width:250px;height:50px;padding:12px;">
-                        Mouse Over Me</div>
+                <br>El propósito de jQuery es hacer mucho más fácil el uso de JavaScript en su sitio web.
 
-                    <script>
-                    function mOver(obj) {
-                      obj.innerHTML = "Thank You"
-                    }
+                <br>jQuery toma muchas tareas comunes que requieren muchas líneas de código JavaScript para llevarlas a cabo y las envuelve en métodos a los que puede llamar con una sola línea de código.
 
-                    function mOut(obj) {
-                      obj.innerHTML = "Mouse Over Me"
-                    }
-                    </script>
-                  </div>
-                </div>
-                <br>
-              <h8 class="post-title">Eventos Onmousedown, Onmouseup y Onclick</h8> 
-              <p>Los eventos onmousedown, onmouseupy onclickson todos partes de un clic del mouse.</p>
-              <p>Primero, cuando se hace clic en un botón del mouse, se activa el evento onmousedown, luego, cuando se suelta el botón del mouse, se activa el evento onmouseup, finalmente, cuando se completa el clic del mouse, se activa el evento onclick.</p>
-              <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">Ejemplo</a></p>
-                <div class="collapse" id="collapseExample3">
-                  <div class="card card-body">
-                    <div onmousedown="mDown(this)" onmouseup="mUp(this)"
-                        style="background-color:#8FBC8F;width:250px;height:50px;padding:12px;">
-                        !Pruébame!</div>
-
-                        <script>
-                        function mDown(obj) {
-                          obj.style.backgroundColor = "#F4A460";
-                          obj.innerHTML = "Release Me";
-                        }
-
-                        function mUp(obj) {
-                          obj.style.backgroundColor="#DEB887";
-                          obj.innerHTML="Thank You";
-                        }
-                        </script>
-                    </div>
-                </div>
+                <br>jQuery también simplifica muchas de las cosas complicadas de JavaScript, como las llamadas AJAX y la manipulación DOM.</p>
+                <br>La biblioteca jQuery contiene las siguientes características:</p>
+                <ul>
+                  <li>Manipulación de HTML/DOM</li>
+                  <li>Manipulación de CSS</li>
+                  <li>Métodos de eventos HTML</li>
+                  <li>Efectos y animaciones</li>
+                  <li>AJAX</li>
+                  <li>Utilidades</li>
+                </ul>
+              <p><h8 class="post-title">Consejo:</h8>Además, jQuery tiene complementos para casi cualquier tarea.</p>
+            
+              <h8 class="post-title">¿Por qué jQuery?</h8> 
+              <p>Hay muchas otras bibliotecas de JavaScript, pero jQuery es probablemente la más popular y también la más extensible.</p>
+              <p>Muchas de las compañías más grandes en la Web usan jQuery, como:</p>
+              <ul>
+                  <li>Google</li>
+                  <li>Microsoft</li>
+                  <li>IBM</li>
+                  <li>Netflix</li>
+                </ul>
+              <h8 class="post-title">¿JQuery funcionará en todos los navegadores?</h8> 
+              <p>El equipo de jQuery sabe todo acerca de los problemas entre navegadores y ha escrito este conocimiento en la biblioteca de jQuery. jQuery se ejecutará exactamente igual en todos los principales navegadores.</p>
             </div>
           </div>
 
@@ -188,11 +144,11 @@
               <div class="divider"></div>
 
               <ul class="categories">
-                <li><a href="#">Eventos DOM</a></li>
-                <li><a href="#">Navegacion DOM</a></li>
-                <li><a href="#">Nodos DOM</a></li>
-                <li><a href="#">Colecciones DOM</a></li>
-                <li><a href="#">Lista de Nodos DOM</a></li>
+                <li><a href="./eventos.html">JQuery Intro</a></li>
+                <li><a href="./eventlistener.html">JQuery Get Started</a></li>
+                <li><a href="#">JQuery Syntax</a></li>
+                <li><a href="#">JQuery Selectors</a></li>
+                <li><a href="#"></a>JQuery Events</li>
               </ul>
             </div>
 
@@ -202,11 +158,11 @@
               <div class="divider"></div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-1.jpg" alt="">
+                  <a class="post-thumb" href="./eventos.html">
+                    <img src="../assets/img/blog/blog-01.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Nodos DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventos.html">JQuery Intro</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -216,11 +172,11 @@
               </div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-2.jpg" alt="">
+                  <a class="post-thumb" href="./eventlistener.html">
+                    <img src="../assets/img/blog/blog-04.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Colecciones DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventlistener.html">JQuery Get Started</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -231,10 +187,10 @@
 
               <div class="blog-item">
                   <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-3.jpg" alt="">
+                    <img src="../assets/img/blog/blog-02.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Navegación DOM</a></h6>
+                    <h6 class="post-title"><a href="#">JQuery Syntax</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -251,13 +207,11 @@
               <div class="divider"></div>
 
               <div class="tag-clouds">
-                <a href="#" class="tag-cloud-link">Nodos</a>
-                <a href="#" class="tag-cloud-link">Colecciones</a>
-                <a href="#" class="tag-cloud-link">Animaciones</a>
-                <a href="#" class="tag-cloud-link">Lista de Nodos</a>
-                <a href="#" class="tag-cloud-link">JS</a>
-                <a href="#" class="tag-cloud-link">HTML</a>
-                <a href="#" class="tag-cloud-link">CSS</a>
+                <a href="#" class="tag-cloud-link">Intro</a>
+                <a href="#" class="tag-cloud-link">Get Started</a>
+                <a href="#" class="tag-cloud-link">Syntax</a>
+                <a href="#" class="tag-cloud-link">Events</a>
+                <a href="#" class="tag-cloud-link">Selectors</a>
               </div>
             </div>
 
@@ -272,7 +226,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-3 py-3">
-          <h3>JS HTML DOM AVANZADO</h3>
+          <h3>JQuery Tutorial</h3>
           <p></p>
 
           <div class="social-media-button">

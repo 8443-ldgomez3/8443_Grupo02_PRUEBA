@@ -8,7 +8,7 @@
 
   <meta name="copyright" content="MACode ID, https://macodeid.com/">
 
-  <title>EventListener</title>
+  <title>JQuery Get Started</title>
 
   <link rel="icon" type="image/x-icon" href="../assets/img/favicon.ico" />
 
@@ -28,7 +28,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky" data-offset="500">
       <div class="container">
-        <a href="../index.html" class="navbar-brand">JS HTML <span class="text-primary"> DOM AVANZADO</span></a>
+        <a href="../index.html" class="navbar-brand">JQuery <span class="text-primary"> Tutorial</span></a>
 
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -37,25 +37,22 @@
         <div class="navbar-collapse collapse" id="navbarContent">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="#animaciones">Animaciones DOM</a>
+              <a class="nav-link" href="#animaciones">JQuery Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#eventos">Eventos DOM</a>
+              <a class="nav-link" href="#eventos">JQuery Intro</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#listener">EventListener DOM</a>
+              <a class="nav-link" href="#listener">JQuery Get Started</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#nodos">Node DOM</a>
+              <a class="nav-link" href="#nodos">JQuery Syntax</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#colecciones">Colecciones DOM</a>
+              <a class="nav-link" href="#colecciones">JQuery Selectors</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#lista">Lista de Nodos DOM</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#navegacion">Navegación DOM</a>
+              <a class="nav-link" href="#lista">JQuery Events</a>
             </li>
           </ul>
         </div>
@@ -70,8 +67,7 @@
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item"><a href="../html/eventlistener.html">Event Listener JS DOM</a></li>
-          <li class="breadcrumb-item active">Acerca de Event Listener JS DOM</li>
+          <li class="breadcrumb-item active">JQuery Get Started</li>
         </ul>
       </nav>
       
@@ -80,7 +76,7 @@
           <div class="blog-single-wrap">
             <div class="header">
               <div class="post-thumb">
-                <img src="../assets/img/blog/blog-3.jpg" alt="">
+                <img src="../assets/img/blog/blog-04.jpg" alt="">
               </div>
               <div class="meta-header">
                 <div class="post-author">
@@ -93,75 +89,70 @@
                 </div>
               </div>
             </div>
-            <h1 class="post-title">Acerca de Event Listener JS DOM</h1>
+            <h1 class="post-title">jQuery Comenzar</h1>
             <div class="post-meta">
             </div>
             <div class="post-content">
-              <h8 class="post-title">El método addEventListener()</h8>
-              <p>El addEventListener()método adjunta un controlador de eventos al elemento especificado.</p>
-              <p>El addEventListener()método adjunta un controlador de eventos a un elemento sin sobrescribir los controladores de eventos existentes.</p>
-              <p>Características:</p>
+              <h8 class="post-title">Agregar jQuery a sus páginas web</h8>
+              <p>Hay varias formas de comenzar a usar jQuery en su sitio web. Puedes:</p>
                 <ul>
-                  <li>Puede agregar muchos controladores de eventos a un elemento.</li>
-                  <li>Puede agregar muchos controladores de eventos del mismo tipo a un elemento, es decir, dos eventos de "clic".</li>
-                  <li>Puede agregar detectores de eventos a cualquier objeto DOM, no solo elementos HTML. es decir, el objeto ventana.</li>
-                  <li>Puede eliminar fácilmente un detector de eventos utilizando el removeEventListener()método.</li>
+                  <li>Descargue la biblioteca jQuery de jQuery.com</li>
+                  <li>Incluya jQuery desde un CDN, como Google</li>
                 </ul>
-              <p>El addEventListener()método facilita el control de cómo reacciona el evento al burbujeo.</p>
-              <p>Al usar el addEventListener()método, el JavaScript se separa del marcado HTML, para una mejor legibilidad y le permite agregar detectores de eventos incluso cuando no controla el marcado HTML.</p>
-              <h8 class="post-title">Sintaxis</h8>
-              <blockquote class="quote">element.addEventListener(event, function, useCapture);</blockquote>
-              <p>El primer parámetro es el tipo de evento (como " click" o " mousedown" o cualquier otro evento HTML DOM ).</p>
-              <p>El segundo parámetro es la función que queremos llamar cuando ocurra el evento.</p>
-              <p>El tercer parámetro es un valor booleano que especifica si se debe usar el burbujeo de eventos o la captura de eventos. Este parámetro es opcional.</p>
-              <h8 class="post-title">Tipos:</h8>
-              <dl>
-                <ul>
-                <li><dt>Agregar un controlador de eventos a un elemento.</dt></li>
-                <li><dt>Agregue muchos controladores de eventos al mismo elemento.</dt></li>
-                <dd>El addEventListener()método le permite agregar muchos eventos al mismo elemento, sin sobrescribir los eventos existentes.</dd>
-                <li><dt>Agregue un controlador de eventos al objeto de la ventana.</dt></li>
-                <dd>El addEventListener()método le permite agregar detectores de eventos en cualquier objeto HTML DOM, como elementos HTML, el documento HTML, el objeto de ventana u otros objetos que admitan eventos, como el xmlHttpRequestobjeto.</dd>
-              </li>
-              </dl>
-              <h6 class="post-title">Ejemplo sobre Muchos Controladores de Eventos al mismo elemento</h6>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a></p>
+              <h8 class="post-title">Descargando jQuery</h8>
+              <p>Hay dos versiones de jQuery disponibles para descargar:</p>
+              <ul>
+                  <li>Versión de producción: esto es para su sitio web en vivo porque ha sido minimizado y comprimido</li>
+                  <li>Versión de desarrollo: esto es para pruebas y desarrollo (código sin comprimir y legible)</li>
+                </ul>
+              <p>Ambas versiones se pueden descargar desde jQuery.com .</p>
+              <p>La biblioteca jQuery es un solo archivo JavaScript y se hace referencia a él con la &lt; script &gt; etiqueta HTML (observe que la &lt; script &gt; etiqueta debe estar dentro de la &lt; head &gt; sección):</p>
+
+              <blockquote class="quote">&lt; head &gt;<br>
+                &lt;  script src="jquery-3.6.1.min.js"  &gt;&lt;  /script  &gt;<br>
+                &lt;  /head  &gt;</blockquote>
+              <h8 class="post-title">Sugerencia:</h8>coloque el archivo descargado en el mismo directorio que las páginas donde desea utilizarlo.
+                <br>
+                <br>
+              <h8 class="post-title">CDN de jQuery</h8>
+              <br>Si no desea descargar y alojar jQuery usted mismo, puede incluirlo desde una CDN (red de entrega de contenido).
+                <br>Google es un ejemplo de alguien que hospeda jQuery:
+                <br>
+                <br>  
+              <h6 class="post-title">CDN de Google:</h6>
+
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a>
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
                     
-                        var x = document.getElementById("myBtn");<br>
-                        x.addEventListener("click", myFunction);<br>
-                        x.addEventListener("click", someOtherFunction);<br>
-                        <br>
-                        function myFunction() {<br>
-                          alert ("Hello World!");<br>
-                        }<br>
-                        <br>
-                        function someOtherFunction() {<br>
-                          alert ("This function was also executed!");<br>
-                        }<br>
+                    &lt; head &gt;<br>
+                    &lt; script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js" &gt;&lt;  /script  &gt;<br>
+                    &lt; /head &gt;
+
                   </div>
                 </div>
-                <br>
-                <p><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a></p>
+                <br>  
+                <br>  
+                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a>
                 <div class="collapse" id="collapseExample2">
                   <div class="card card-body">
-                    <p>Este ejemplo usa el método addEventListener() para agregar dos eventos de clic al mismo botón.</p>
 
-                    <button id="myBtn">¡Inténtalo!</button>
+                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
                     <script>
-                      var x = document.getElementById("myBtn");
-                      x.addEventListener("click", myFunction);
-                      x.addEventListener("click", someOtherFunction);
+                    $(document).ready(function(){
+                      $("button").click(function(){
+                        $("h4").hide();
+                      });
+                    });
+                    </script>
 
-                      function myFunction() {
-                        alert ("Hello World!");
-                      }
+                    <h2>This is a heading</h2>
 
-                      function someOtherFunction() {
-                        alert ("This function was also executed!");
-                      }
-                      </script>
+                    <h4>This is a paragraph.</h4>
+                    <h4>This is another paragraph.</h4>
+
+                    <button>Click me</button>
+
                   </div>
                 </div>
             </div>
@@ -178,11 +169,11 @@
               <div class="divider"></div>
 
               <ul class="categories">
-                <li><a href="#">Eventos DOM</a></li>
-                <li><a href="#">Navegacion DOM</a></li>
-                <li><a href="#">Nodos DOM</a></li>
-                <li><a href="#">Colecciones DOM</a></li>
-                <li><a href="#">Lista de Nodos DOM</a></li>
+                <li><a href="./eventos.html">JQuery Intro</a></li>
+                <li><a href="./eventlistener.html">JQuery Get Started</a></li>
+                <li><a href="#">JQuery Syntax</a></li>
+                <li><a href="#">JQuery Selectors</a></li>
+                <li><a href="#"></a>JQuery Events</li>
               </ul>
             </div>
 
@@ -192,11 +183,11 @@
               <div class="divider"></div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-1.jpg" alt="">
+                  <a class="post-thumb" href="./eventos.html">
+                    <img src="../assets/img/blog/blog-01.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Nodos DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventos.html">JQuery Intro</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -206,11 +197,11 @@
               </div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-2.jpg" alt="">
+                  <a class="post-thumb" href="./eventlistener.html">
+                    <img src="../assets/img/blog/blog-04.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Colecciones DOM</a></h6>
+                    <h6 class="post-title"><a href="./eventlistener.html">JQuery Get Started</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -221,10 +212,10 @@
 
               <div class="blog-item">
                   <a class="post-thumb" href="">
-                    <img src="../assets/img/blog/blog-3.jpg" alt="">
+                    <img src="../assets/img/blog/blog-02.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">Acerca de Navegación DOM</a></h6>
+                    <h6 class="post-title"><a href="#">JQuery Syntax</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -241,13 +232,11 @@
               <div class="divider"></div>
 
               <div class="tag-clouds">
-                <a href="#" class="tag-cloud-link">Nodos</a>
-                <a href="#" class="tag-cloud-link">Colecciones</a>
-                <a href="#" class="tag-cloud-link">Animaciones</a>
-                <a href="#" class="tag-cloud-link">Lista de Nodos</a>
-                <a href="#" class="tag-cloud-link">JS</a>
-                <a href="#" class="tag-cloud-link">HTML</a>
-                <a href="#" class="tag-cloud-link">CSS</a>
+                <a href="#" class="tag-cloud-link">Intro</a>
+                <a href="#" class="tag-cloud-link">Get Started</a>
+                <a href="#" class="tag-cloud-link">Syntax</a>
+                <a href="#" class="tag-cloud-link">Events</a>
+                <a href="#" class="tag-cloud-link">Selectors</a>
               </div>
             </div>
 
