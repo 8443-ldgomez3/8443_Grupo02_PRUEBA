@@ -66,7 +66,7 @@
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active">JQuery Home</li>
+          <li class="breadcrumb-item active">JQuery Selectors</li>
         </ul>
       </nav>
       
@@ -88,21 +88,32 @@
                 </div>
               </div>
             </div>
-            <h1 class="post-title">JQuery Home</h1>
+            <h1 class="post-title">JQuery Selectors</h1>
             <div class="post-meta">
             </div>
             <div class="post-content">
-              <p>Para facilitar estos procesos tenemos jQuery, que bien podría resumirse en una navaja suiza para simplificar el modo en que accedemos al DOM de la web usando JavaScript.  jQuery es una librería desarrollada en 2006 por John Resig que permite añadir una capa de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando eventos, creando animaciones y diferentes efectos para enriquecer la experiencia de usuario.</p>
-                
-              
-              <p>Ejemplos en cada capítulo</p>
+              <p>Los selectores de jQuery se utilizan para "encontrar" (o seleccionar) elementos HTML en función de su nombre, identificación, clases, tipos, atributos, valores de atributos y mucho más. Se basa en los selectores de CSS existentes y, además, tiene algunos selectores personalizados propios.</p>
+              <p>Todos los selectores en jQuery comienzan con el signo de dólar y paréntesis: $().</p>
+              <h4>Tipos:</h4>
+              <dl>
+                <dt>El selector de Elementos</dt>
+                <dd>El selector de elementos jQuery selecciona elementos en función del nombre del elemento.</dd>
+                <dt>El selector de #id</dt>
+                <dd>El selector jQuery usa el atributo id de una etiqueta HTML para encontrar el elemento específico.#id</dd>
+                <dd>Una identificación debe ser única dentro de una página, por lo que debe usar el selector #id cuando desee encontrar un elemento único y único.</dd>
+                <dt>El selector .class</dt>
+                <dd>El selector jQuery .classencuentra elementos con una clase específica.</dd>
+                <dd></dd>
+              </dl>
+              <p>Si su sitio web contiene muchas páginas y desea que sus funciones de jQuery sean fáciles de mantener, puede poner sus funciones de jQuery en un archivo .js separado.</p>
+              <p>Ejemplo:</p>
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a>
                 
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
                     $(document).ready(function(){<br>
-                    $("h5").click(function(){<br>
-                       $(this).hide();<br>
+                      $("button").click(function(){<br>
+                        $(".test").hide();<br>
                       });<br>
                     });<br>
                   </div>
@@ -114,15 +125,18 @@
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
                     <script>
                     $(document).ready(function(){
-                      $("h5").click(function(){
-                        $(this).hide();
+                      $("button").click(function(){
+                        $(".test").hide();
                       });
                     });
                     </script>
 
-                    <h5>If you click on me, I will disappear.</h5>
-                    <h5>Click me away!</h5>
-                    <h5>Click me too!</h5>
+                    <h2 class="test">This is a heading</h2>
+
+                    <p class="test">This is a paragraph.</p>
+                    <p>This is another paragraph.</p>
+
+                    <button>Click me</button>
                   </div>
                 </div>
             </div>
@@ -139,11 +153,11 @@
               <div class="divider"></div>
 
               <ul class="categories">
-                <li><a href="./eventos.html">JQuery Intro</a></li>
-                <li><a href="./eventlistener.html">JQuery Get Started</a></li>
-                <li><a href="#">JQuery Syntax</a></li>
-                <li><a href="#">JQuery Selectors</a></li>
-                <li><a href="#"></a>JQuery Events</li>
+                <li><a href="./intro.html">JQuery Intro</a></li>
+                <li><a href="./start.html">JQuery Get Started</a></li>
+                <li><a href="./syntax.html">JQuery Syntax</a></li>
+                <li><a href="./selectors.html">JQuery Selectors</a></li>
+                <li><a href="./events.html"></a>JQuery Events</li>
               </ul>
             </div>
 
@@ -181,11 +195,11 @@
               </div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
+                  <a class="post-thumb" href="./syntax.html">
                     <img src="../assets/img/blog/blog-02.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">JQuery Syntax</a></h6>
+                    <h6 class="post-title"><a href="./syntax.html">JQuery Syntax</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -221,7 +235,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-3 py-3">
-          <h3>JS HTML DOM AVANZADO</h3>
+          <h3>JQuery Tutorial</h3>
           <p></p>
 
           <div class="social-media-button">
