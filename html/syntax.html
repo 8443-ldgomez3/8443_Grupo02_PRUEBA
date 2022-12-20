@@ -100,38 +100,33 @@
                 <li>Un ( selector ) para "consultar (o encontrar)" elementos HTML</li>
                 <li>Una acción jQuery () que se realizará en los elementos</li>
               </ul>
-                
-              
-              <p>Ejemplos en cada capítulo</p>
-                <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a>
-                
-                <div class="collapse" id="collapseExample">
-                  <div class="card card-body">
-                    $(document).ready(function(){<br>
-                    $("h5").click(function(){<br>
-                       $(this).hide();<br>
-                      });<br>
-                    });<br>
-                  </div>
-                </div>
-                <br><br><br><a class="btn btn-primary" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Ejemplo</a>
-                <div class="collapse" id="collapseExample2">
-                
-                  <div class="card card-body">
-                    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-                    <script>
-                    $(document).ready(function(){
-                      $("h5").click(function(){
-                        $(this).hide();
-                      });
-                    });
-                    </script>
-
-                    <h5>If you click on me, I will disappear.</h5>
-                    <h5>Click me away!</h5>
-                    <h5>Click me too!</h5>
-                  </div>
-                </div>
+              <dd>Ejemplos:</dd>
+              <dl>
+                <dt>$(this).hide()</dt>
+                <dd>Oculta el elemento actual.</dd>
+                <dt>$("p").hide()</dt>
+                <dd>oculta todos los elementos ">>p<<"</p></dd>
+                <dt>$(".test").hide()</dt>
+                <dd>Oculta todos los elementos con class="test".</dd>
+                <dt>$("#test").hide()</dt>
+                <dd>oculta el elemento con id="test".</dd>
+              </dl>
+              <h4>El evento de documento listo</h4>
+              <p>Es posible que haya notado que todos los métodos de jQuery en nuestros ejemplos están dentro de un evento de documento listo:</p>
+              <div>
+                <img src="../assets/img/ejem1.png">
+              </div>
+              <p>Esto es para evitar que se ejecute cualquier código jQuery antes de que el documento termine de cargarse (esté listo).</p>
+              <p>Es una buena práctica esperar a que el documento esté completamente cargado y listo antes de trabajar con él. Esto también le permite tener su código JavaScript antes del cuerpo de su documento, en la sección de encabezado.</p>
+              <dd>Estos son algunos ejemplos de acciones que pueden fallar si los métodos se ejecutan antes de que el documento esté completamente cargado:</dd>
+              <ul>
+                <li>Intentando ocultar un elemento que aún no se ha creado</li>
+                <li>Intentando obtener el tamaño de una imagen que aún no está cargada</li>
+              </ul>
+              <div>
+                <img src="../assets/img/ejem2.png">
+              </div>
+              <p>Utilice la sintaxis que prefiera. Creemos que el evento de documento listo es más fácil de entender al leer el código.</p>
             </div>
           </div>
 
@@ -146,11 +141,11 @@
               <div class="divider"></div>
 
               <ul class="categories">
-                <li><a href="./eventos.html">JQuery Intro</a></li>
-                <li><a href="./eventlistener.html">JQuery Get Started</a></li>
-                <li><a href="#">JQuery Syntax</a></li>
-                <li><a href="#">JQuery Selectors</a></li>
-                <li><a href="#"></a>JQuery Events</li>
+                <li><a href="./intro.html">JQuery Intro</a></li>
+                <li><a href="./start.html">JQuery Get Started</a></li>
+                <li><a href="./syntax.html">JQuery Syntax</a></li>
+                <li><a href="./selectors.html">JQuery Selectors</a></li>
+                <li><a href="./events.html"></a>JQuery Events</li>
               </ul>
             </div>
 
