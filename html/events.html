@@ -66,7 +66,7 @@
       <nav aria-label="Breadcrumb">
         <ul class="breadcrumb p-0 mb-0 bg-transparent">
           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-          <li class="breadcrumb-item active">JQuery Home</li>
+          <li class="breadcrumb-item active">JQuerY Events Methods</li>
         </ul>
       </nav>
       
@@ -88,21 +88,65 @@
                 </div>
               </div>
             </div>
-            <h1 class="post-title">JQuery Home</h1>
+            <h1 class="post-title">JQuery Events Methods</h1>
             <div class="post-meta">
             </div>
             <div class="post-content">
-              <p>Para facilitar estos procesos tenemos jQuery, que bien podría resumirse en una navaja suiza para simplificar el modo en que accedemos al DOM de la web usando JavaScript.  jQuery es una librería desarrollada en 2006 por John Resig que permite añadir una capa de interacción AJAX entre la web y las aplicaciones que desarrollemos controlando eventos, creando animaciones y diferentes efectos para enriquecer la experiencia de usuario.</p>
-                
-              
-              <p>Ejemplos en cada capítulo</p>
+              <h4>¿Qué son los Eventos?</h4>
+              <p>Todas las diferentes acciones de los visitantes a las que una página web puede responder se denominan eventos.</p>
+              <p>El término "incendios/despedidos" se usa a menudo con eventos. Ejemplo: "El evento de pulsación de tecla se activa en el momento en que pulsa una tecla".</p>
+              <h4>Sintaxis de jQuery para métodos de eventos</h4> 
+              <p>En jQuery, la mayoría de los eventos DOM tienen un método jQuery equivalente.</p>
+              <p>Para asignar un evento de clic a todos los párrafos de una página, puede hacer lo siguiente:</p>
+              <div>
+                <img src="../assets/img/ejem3.png">
+              </div>
+              <p>El siguiente paso es definir qué debe suceder cuando se activa el evento. Debes pasar una función al evento:</p>
+              <div>
+                <img src="../assets/img/ejem4.png">
+              </div>
+              <h4>Métodos de eventos de jQuery comúnmente utilizados</h4>
+              <dl>
+                <dt>$(documento).listo()</dt>
+                <dd>El $(document).ready()método nos permite ejecutar una función cuando el documento está completamente cargado.</dd>
+                <dt>click()</dt>
+                <dd>El click()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>dblclick()</dt>
+                <dd>El dblclick()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>mouseenter()</dt>
+                <dd>El mouseenter()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>mouseleave()</dt>
+                <dd>El mouseleave()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>mousedown()</dt>
+                <dd>El mousedown()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>mouseup()</dt>
+                <dd>El mouseup()método adjunta una función de controlador de eventos a un elemento HTML.</dd>
+                <dt>hover()</dt>
+                <dd>El hover()método toma dos funciones y es una combinación de los métodos mouseenter()y .mouseleave()</dd>
+                <dt>focus()</dt>
+                <dd>El focus()método adjunta una función de controlador de eventos a un campo de formulario HTML.</dd>
+                <dt>blur()</dt>
+                <dd>El blur()método adjunta una función de controlador de eventos a un campo de formulario HTML.</dd>
+              </dl>
+              <h4>El método on()</h4>
+              <p>El on()método adjunta uno o más controladores de eventos para los elementos seleccionados.</p>
+              <p>Se puede adjuntar múltiples controladores de eventos a un elemento</p>
+              <p>Ejemplo:</p>
                 <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">Código</a>
                 
                 <div class="collapse" id="collapseExample">
                   <div class="card card-body">
                     $(document).ready(function(){<br>
-                    $("h5").click(function(){<br>
-                       $(this).hide();<br>
+                      $("p").on({<br>
+                        mouseenter: function(){<br>
+                          $(this).css("background-color", "lightgray");<br>
+                        }, <br> 
+                        mouseleave: function(){<br>
+                          $(this).css("background-color", "lightblue");<br>
+                        }, <br>
+                        click: function(){<br>
+                          $(this).css("background-color", "yellow");<br>
+                        }  <br>
                       });<br>
                     });<br>
                   </div>
@@ -114,15 +158,20 @@
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
                     <script>
                     $(document).ready(function(){
-                      $("h5").click(function(){
-                        $(this).hide();
+                      $("p").on({
+                        mouseenter: function(){
+                          $(this).css("background-color", "lightgray");
+                        },  
+                        mouseleave: function(){
+                          $(this).css("background-color", "lightblue");
+                        }, 
+                        click: function(){
+                          $(this).css("background-color", "lightbrown");
+                        }  
                       });
                     });
                     </script>
-
-                    <h5>If you click on me, I will disappear.</h5>
-                    <h5>Click me away!</h5>
-                    <h5>Click me too!</h5>
+                    <p>Haga clic o mueva el puntero del mouse sobre este párrafo.</p>
                   </div>
                 </div>
             </div>
@@ -141,9 +190,9 @@
               <ul class="categories">
                 <li><a href="./eventos.html">JQuery Intro</a></li>
                 <li><a href="./eventlistener.html">JQuery Get Started</a></li>
-                <li><a href="#">JQuery Syntax</a></li>
-                <li><a href="#">JQuery Selectors</a></li>
-                <li><a href="#"></a>JQuery Events</li>
+                <li><a href="./syntax.html">JQuery Syntax</a></li>
+                <li><a href="./selectors.html">JQuery Selectors</a></li>
+                <li><a href="./events.html"></a>JQuery Events</li>
               </ul>
             </div>
 
@@ -181,11 +230,11 @@
               </div>
 
               <div class="blog-item">
-                  <a class="post-thumb" href="">
+                  <a class="post-thumb" href="./syntax.html">
                     <img src="../assets/img/blog/blog-02.jpg" alt="">
                   </a>
                   <div class="content">
-                    <h6 class="post-title"><a href="#">JQuery Syntax</a></h6>
+                    <h6 class="post-title"><a href="./syntax.html">JQuery Syntax</a></h6>
                     <div class="meta">
                       <a href="#"><span class="mai-calendar"></span> Nov 12, 2022</a>
                       <a href="#"><span class="mai-person"></span> Admin</a>
@@ -221,7 +270,7 @@
     <div class="container">
       <div class="row mb-5">
         <div class="col-lg-3 py-3">
-          <h3>JS HTML DOM AVANZADO</h3>
+          <h3>JQuery Tutorial</h3>
           <p></p>
 
           <div class="social-media-button">
